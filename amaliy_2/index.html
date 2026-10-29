@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaxsiy Blog — Dasturlash va Texnologiyalar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <!-- A1 & B5. Sticky Header va Nav -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">Sardor's Blog</a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Bosh sahifa</a></li>
+          <li><a href="batafsil.html">Reja & Ma'lumot</a></li>
+          <li><a href="aloqa.html">Bog'lanish</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container content-wrapper">
+    <!-- Asosiy mazmun -->
+    <main class="main-content">
+      <section>
+        <h1>Dasturiy injiniring sari amaliy qadamlar</h1>
+        <p>
+          Ushbu blogda men veb-texnologiyalarni o'rganish, zamonaviy dasturlash vositalari 
+          va backend arxitekturasini mustaqil tahlil qilish jarayonidagi amaliy tajribalarimni ulashib boraman.
+        </p>
+
+        <!-- B3 & B9. Flexbox kartalar qatori -->
+        <div class="card-grid">
+          <article class="card">
+            <!-- B6. Absolute belgi -->
+            <span class="badge">Yangi</span>
+            <h2>HTML5 va Semantika</h2>
+            <p>Sahifaning to'g'ri suyagini qurish va qidiruv tizimlari (SEO) uchun toza teglar tanlash asoslari.</p>
+          </article>
+
+          <article class="card">
+            <h2>CSS Blok Modeli</h2>
+            <p>Margin, padding va box-sizing tamoyillari orqali elementlarni ekranda to'g'ri joylashtirish sirlari.</p>
+          </article>
+
+          <article class="card">
+            <h2>Flexbox Texnologiyasi</h2>
+            <p>Bir o'lchamli qutilarni bir qatorga tartibli terish va har qanday ekranga moslashuvchan qilish.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- A10. Figure va Figcaption bilan 2 ta rasm -->
+      <section>
+        <h2>O'quv jarayonidan lavhalar</h2>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Dasturchi noutbukda frontend kod yozmoqda">
+          <figcaption>1-rasm: Kod muharriri va frontend tuzilmasi ustida amaliy mashg'ulot</figcaption>
+        </figure>
+
+        <figure>
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800" alt="Kompyuter ekranida dasturlash kodlari tahlili">
+          <figcaption>2-rasm: Dasturiy ta'minotni loyihalash va tahlil jarayoni</figcaption>
+        </figure>
+      </section>
+
+      <!-- A11. Video / YouTube iframe (title bilan) -->
+      <section>
+        <h2>Tavsiya etilgan video darslik</h2>
+        <iframe class="video-box" src="https://www.youtube.com/embed/mU6anWqZJcc" title="Web development fundamentals video" allowfullscreen></iframe>
+      </section>
+    </main>
+
+    <!-- A2. Aside - Yon panel -->
+    <aside>
+      <h3>Muallif haqida</h3>
+      <p>Urganch davlat universiteti Dasturiy injiniring yo'nalishi talabasi.</p>
+      <hr>
+      <h4>Kategoriyalar</h4>
+      <ul>
+        <li>Frontend asoslari</li>
+        <li>Backend va Python</li>
+        <li>Ma'lumotlar bazasi</li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- B7. Fixed "Yuqoriga" tugmasi -->
+  <a href="#top" class="back-to-top" title="Yuqoriga qaytish">&#8593;</a>
+
+  <!-- B10. Flexbox 2 ustunli Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>Sardorbek Sadullayev</h3>
+        <p>Web dasturlashga kirish fani bo'yicha 2-amaliy ish loyihasi.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Tezkor havolalar</h3>
+        <p><a href="index.html" style="color: white;">Bosh sahifa</a> | <a href="aloqa.html" style="color: white;">Aloqa</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Shaxsiy Blog. Barcha huquqlar himoyalangan.
+    </div>
+  </footer>
+
+</body>
+</html>

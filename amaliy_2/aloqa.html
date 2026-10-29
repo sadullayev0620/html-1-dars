@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bog'lanish va Ro'yxatdan o'tish — Shaxsiy Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">Sardor's Blog</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="batafsil.html">Reja & Ma'lumot</a></li>
+          <li><a href="aloqa.html" class="active">Bog'lanish</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container content-wrapper">
+    <main class="main-content">
+      <section>
+        <h1>Savol yoki hamkorlik bo'yicha murojaat qilish</h1>
+        <p>Blog muallifiga o'z fikrlaringizni qoldiring yoki loyihalar bo'yicha aloqaga chiqing.</p>
+
+        <!-- A6 - A9. Katta forma (kamida 8 ta maydon) -->
+        <form action="#" method="post">
+
+          <!-- 1-maydon: text (required) -->
+          <div class="form-group">
+            <label for="ism">To'liq ism-familiyangiz *</label>
+            <input type="text" id="ism" name="ism" placeholder="Masalan: Sardorbek Sadullayev" required>
+          </div>
+
+          <!-- 2-maydon: email (required) -->
+          <div class="form-group">
+            <label for="email">Elektron pochta manzilingiz *</label>
+            <input type="email" id="email" name="email" placeholder="namuna@domain.uz" required>
+          </div>
+
+          <!-- 3-maydon: tel (pattern bilan) -->
+          <div class="form-group">
+            <label for="tel">Telefon raqamingiz (+998 bilan kiriting) *</label>
+            <input type="tel" id="tel" name="tel" placeholder="+998901234567" pattern="\+998[0-9]{9}" required>
+            <small style="color: #666;">Format: +998XXXXXXXXX</small>
+          </div>
+
+          <!-- 4-maydon: date -->
+          <div class="form-group">
+            <label for="sana">Murojaat sanasi</label>
+            <input type="date" id="sana" name="sana">
+          </div>
+
+          <!-- 5-maydon: select -->
+          <div class="form-group">
+            <label for="mavzu">Murojaat yo'nalishi</label>
+            <select id="mavzu" name="mavzu">
+              <option value="savol">Dasturlash bo'yicha savol</option>
+              <option value="taklif">Hamkorlik taklifi</option>
+              <option value="xatolik">Saytdagi xatolik haqida xabar</option>
+            </select>
+          </div>
+
+          <!-- 6-maydon: Radio guruh (fieldset + legend bilan) -->
+          <fieldset>
+            <legend>Sizning dasturlashdagi darajangiz</legend>
+            <div class="form-group-inline">
+              <label><input type="radio" name="daraja" value="boshlangich" checked> Boshlang'ich</label>
+              <label><input type="radio" name="daraja" value="orta"> O'rta</label>
+              <label><input type="radio" name="daraja" value="tajribali"> Tajribali</label>
+            </div>
+          </fieldset>
+
+          <!-- 7-maydon: textarea -->
+          <div class="form-group">
+            <label for="xabar">Xabaringiz matni</label>
+            <textarea id="xabar" name="xabar" rows="5" placeholder="Fikringiz yoki taklifingizni to'liq bayon qiling..."></textarea>
+          </div>
+
+          <!-- 8-maydon: checkbox -->
+          <div class="form-group-inline">
+            <input type="checkbox" id="rozilik" name="rozilik" required>
+            <label for="rozilik">Kiritilgan ma'lumotlar to'g'riligini tasdiqlayman *</label>
+          </div>
+
+          <!-- B11. Submit tugmasi Flexbox bilan markazlashgan -->
+          <div class="btn-wrapper">
+            <button type="submit">Murojaatni yuborish</button>
+          </div>
+
+        </form>
+      </section>
+    </main>
+
+    <aside>
+      <h3>Bog'lanish ma'lumotlari</h3>
+      <p><strong>Manzil:</strong> Urganch shahri, UrDU</p>
+      <p><strong>Telegram:</strong> @muallif_blog</p>
+    </aside>
+  </div>
+
+  <a href="#top" class="back-to-top" title="Yuqoriga qaytish">&#8593;</a>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>Sardorbek Sadullayev</h3>
+        <p>Web dasturlashga kirish fani bo'yicha 2-amaliy ish loyihasi.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Tezkor havolalar</h3>
+        <p><a href="index.html" style="color: white;">Bosh sahifa</a> | <a href="batafsil.html" style="color: white;">Reja</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Shaxsiy Blog. Barcha huquqlar himoyalangan.
+    </div>
+  </footer>
+
+</body>
+</html>
