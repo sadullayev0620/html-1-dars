@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maqolalar Katalogi — Shaxsiy Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">Sardor's Blog</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="katalog.html" class="active">Maqolalar</a></li>
+          <li><a href="aloqa.html">Bog'lanish</a></li>
+          <li><button id="theme-toggle" class="theme-btn" type="button">🌙 Tungi rejim</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Dasturlash bo'yicha maqolalar katalogi</h1>
+
+    <!-- A qism: Statistika bloki -->
+    <section class="stats-bar" id="statistika">
+      <div class="stat-box">
+        <span>Jami maqolalar:</span>
+        <strong id="stat-jami">0</strong>
+      </div>
+      <div class="stat-box">
+        <span>O'rtacha o'qish vaqti:</span>
+        <strong id="stat-ortacha">0 daq</strong>
+      </div>
+      <div class="stat-box">
+        <span>Eng uzun maqola:</span>
+        <strong id="stat-eng-uzun">-</strong>
+      </div>
+    </section>
+
+    <!-- B qism: Qidiruv, Filtr va Saralash -->
+    <section class="controls-bar">
+      <input type="text" id="qidiruv" placeholder="Maqola nomi bo'yicha qidirish...">
+
+      <select id="kategoriya-filtr">
+        <option value="barchasi">Barcha kategoriyalar</option>
+        <option value="frontend">Frontend</option>
+        <option value="javascript">JavaScript</option>
+        <option value="backend">Backend</option>
+        <option value="database">Ma'lumotlar bazasi</option>
+        <option value="tools">Vositalar (Git/Docker)</option>
+      </select>
+
+      <select id="saralash">
+        <option value="standart">Tartiblash: Standart</option>
+        <option value="vaqt-osish">O'qish vaqti: Qisqadan uzunga</option>
+        <option value="vaqt-kamayish">O'qish vaqti: Uzundan qisqaga</option>
+        <option value="nom-alifbo">Nomi bo'yicha: A - Z</option>
+      </select>
+    </section>
+
+    <p class="natija-soni">Ko'rsatilayotgan maqolalar: <strong id="korsatilgan-soni">0</strong> ta</p>
+
+    <!-- Kartalar JS orqali shu yerga chiqadi -->
+    <div class="card-grid" id="maqolalar-konteyner"></div>
+  </div>
+
+  <!-- C qism: Modal oyna -->
+  <div class="modal-overlay" id="modal-oyna" hidden>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-yopish" type="button" title="Yopish">&times;</button>
+      <img id="modal-rasm" src="" alt="">
+      <span class="badge" id="modal-kategoriya"></span>
+      <h2 id="modal-sarlavha"></h2>
+      <p id="modal-vaqt"></p>
+      <p id="modal-matn"></p>
+      <div id="modal-teglar" class="tag-list"></div>
+    </div>
+  </div>
+
+  <a href="#top" class="back-to-top" title="Yuqoriga qaytish">&#8593;</a>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>Sardorbek Sadullayev</h3>
+        <p>Web dasturlashga kirish fani bo'yicha 4-amaliy ish loyihasi.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Tezkor havolalar</h3>
+        <p><a href="index.html" style="color: white;">Bosh sahifa</a> | <a href="aloqa.html" style="color: white;">Aloqa</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Shaxsiy Blog. Barcha huquqlar himoyalangan.
+    </div>
+  </footer>
+
+  <!-- JS fayllarni ulash -->
+  <script src="js/data.js"></script>
+  <script src="js/katalog.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
